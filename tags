@@ -1,0 +1,72 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ASSO_EXCEPTION_H	include/people_tracker/asso_exception.h	2;"	d
+BASE_LINK	include/people_tracker/people_tracker.h	37;"	d
+PEDESTRIANLOCALISATION_H	include/people_tracker/people_tracker.h	2;"	d
+PeopleTracker	include/people_tracker/people_tracker.h	/^class PeopleTracker$/;"	c
+PeopleTracker	src/people_tracker/people_tracker.cpp	/^PeopleTracker::PeopleTracker() :$/;"	f	class:PeopleTracker
+SIMPLE_TRACKING_H	include/people_tracker/simple_tracking.h	22;"	d
+SimpleTracking	include/people_tracker/simple_tracking.h	/^    SimpleTracking() {$/;"	f	class:SimpleTracking
+SimpleTracking	include/people_tracker/simple_tracking.h	/^class SimpleTracking$/;"	c
+addDetectorModel	include/people_tracker/simple_tracking.h	/^    void addDetectorModel(std::string name, association_t alg, double pos_noise_x, double pos_noise_y) {$/;"	f	class:SimpleTracking
+addObservation	include/people_tracker/simple_tracking.h	/^    void addObservation(std::string detector_name, std::vector<geometry_msgs::Point> obsv, double obsv_time) {$/;"	f	class:SimpleTracking
+alg	include/people_tracker/simple_tracking.h	/^        association_t alg;          \/\/ Data association algorithm$/;"	m	struct:SimpleTracking::__anon1
+asso_exception	include/people_tracker/asso_exception.h	/^class asso_exception: public exception$/;"	c
+cartesianToPolar	src/people_tracker/people_tracker.cpp	/^std::vector<double> PeopleTracker::cartesianToPolar(geometry_msgs::Point point) {$/;"	f	class:PeopleTracker
+connectCallback	src/people_tracker/people_tracker.cpp	/^void PeopleTracker::connectCallback(ros::NodeHandle &n) {$/;"	f	class:PeopleTracker
+createArms	include/people_tracker/people_tracker.h	/^    std::vector<visualization_msgs::Marker> createArms($/;"	f	class:PeopleTracker
+createBody	include/people_tracker/people_tracker.h	/^    visualization_msgs::Marker createBody($/;"	f	class:PeopleTracker
+createConstantVelocityModel	include/people_tracker/simple_tracking.h	/^    void createConstantVelocityModel(double vel_noise_x, double vel_noise_y) {$/;"	f	class:SimpleTracking
+createHead	include/people_tracker/people_tracker.h	/^    visualization_msgs::Marker createHead($/;"	f	class:PeopleTracker
+createHuman	include/people_tracker/people_tracker.h	/^    std::vector<visualization_msgs::Marker> createHuman($/;"	f	class:PeopleTracker
+createLegs	include/people_tracker/people_tracker.h	/^    std::vector<visualization_msgs::Marker> createLegs($/;"	f	class:PeopleTracker
+createMarker	include/people_tracker/people_tracker.h	/^    visualization_msgs::Marker createMarker($/;"	f	class:PeopleTracker
+createVisualisation	src/people_tracker/people_tracker.cpp	/^void PeopleTracker::createVisualisation(std::vector<geometry_msgs::Pose> poses, ros::Publisher& pub) {$/;"	f	class:PeopleTracker
+ctm	include/people_tracker/simple_tracking.h	/^        CartesianModel *ctm;        \/\/ Cartesian observation model$/;"	m	struct:SimpleTracking::__anon1
+cvm	include/people_tracker/simple_tracking.h	/^    CVModel *cvm;                   \/\/ CV model$/;"	m	class:SimpleTracking
+detect_seq	include/people_tracker/people_tracker.h	/^    unsigned long detect_seq;$/;"	m	class:PeopleTracker
+detectorCallback	src/people_tracker/people_tracker.cpp	/^void PeopleTracker::detectorCallback(const geometry_msgs::PoseArray::ConstPtr &pta, std::string detector)$/;"	f	class:PeopleTracker
+detector_model	include/people_tracker/simple_tracking.h	/^    } detector_model;$/;"	t	class:SimpleTracking	typeref:struct:SimpleTracking::__anon1
+detectors	include/people_tracker/simple_tracking.h	/^    std::map<std::string, detector_model> detectors;$/;"	m	class:SimpleTracking
+dns_namespace_uuid	include/people_tracker/people_tracker.h	/^    boost::uuids::uuid dns_namespace_uuid;$/;"	m	class:PeopleTracker
+dt	include/people_tracker/simple_tracking.h	/^    double dt, time;$/;"	m	class:SimpleTracking
+ekf	include/people_tracker/people_tracker.h	/^    SimpleTracking<EKFilter> *ekf = NULL;$/;"	m	class:PeopleTracker
+filter_exception	include/people_tracker/asso_exception.h	/^class filter_exception: public exception$/;"	c
+generateUUID	include/people_tracker/people_tracker.h	/^    std::string generateUUID(std::string time, long id) {$/;"	f	class:PeopleTracker
+generate_extremity_position	include/people_tracker/people_tracker.h	/^    geometry_msgs::Pose generate_extremity_position(geometry_msgs::Pose centre, double dx, double dy, double z) {$/;"	f	class:PeopleTracker
+generate_position	include/people_tracker/people_tracker.h	/^    geometry_msgs::Point generate_position(geometry_msgs::Point centre, double angle, double dx, double dy)$/;"	f	class:PeopleTracker
+getTime	include/people_tracker/simple_tracking.h	/^    double getTime() {$/;"	f	class:SimpleTracking
+initialize	include/people_tracker/simple_tracking.h	/^bool MTRK::initialize(FilterType* &filter, sequence_t& obsvSeq) {$/;"	f	class:MTRK
+isLost	include/people_tracker/simple_tracking.h	/^bool MTRK::isLost(const FilterType* filter) {$/;"	f	class:MTRK
+listener	include/people_tracker/people_tracker.h	/^    tf::TransformListener* listener;$/;"	m	class:PeopleTracker
+main	src/people_tracker/people_tracker.cpp	/^int main(int argc, char **argv)$/;"	f
+marker_seq	include/people_tracker/people_tracker.h	/^    unsigned long marker_seq;$/;"	m	class:PeopleTracker
+mtrk	include/people_tracker/simple_tracking.h	/^    MultiTracker<FilterType, 4> mtrk; \/\/ state [x, v_x, y, v_y]$/;"	m	class:SimpleTracking
+mutex	include/people_tracker/simple_tracking.h	/^    boost::mutex mutex;$/;"	m	class:SimpleTracking
+num_to_str	include/people_tracker/people_tracker.h	/^    std::string num_to_str(T num) {$/;"	f	class:PeopleTracker
+observation	include/people_tracker/simple_tracking.h	/^    FM::Vec *observation;           \/\/ observation [x, y]$/;"	m	class:SimpleTracking
+parseParams	src/people_tracker/people_tracker.cpp	/^void PeopleTracker::parseParams(ros::NodeHandle n) {$/;"	f	class:PeopleTracker
+pub_detect	include/people_tracker/people_tracker.h	/^    ros::Publisher pub_detect;$/;"	m	class:PeopleTracker
+pub_marker	include/people_tracker/people_tracker.h	/^    ros::Publisher pub_marker;$/;"	m	class:PeopleTracker
+pub_people	include/people_tracker/people_tracker.h	/^    ros::Publisher pub_people;$/;"	m	class:PeopleTracker
+pub_pose	include/people_tracker/people_tracker.h	/^    ros::Publisher pub_pose;$/;"	m	class:PeopleTracker
+pub_pose_array	include/people_tracker/people_tracker.h	/^    ros::Publisher pub_pose_array;$/;"	m	class:PeopleTracker
+publishDetections	src/people_tracker/people_tracker.cpp	/^void PeopleTracker::publishDetections($/;"	f	class:PeopleTracker
+publishDetections	src/people_tracker/people_tracker.cpp	/^void PeopleTracker::publishDetections(bayes_people_tracker::PeopleTracker msg) {$/;"	f	class:PeopleTracker
+publishDetections	src/people_tracker/people_tracker.cpp	/^void PeopleTracker::publishDetections(geometry_msgs::PoseArray msg) {$/;"	f	class:PeopleTracker
+publishDetections	src/people_tracker/people_tracker.cpp	/^void PeopleTracker::publishDetections(geometry_msgs::PoseStamped msg) {$/;"	f	class:PeopleTracker
+publishDetections	src/people_tracker/people_tracker.cpp	/^void PeopleTracker::publishDetections(people_msgs::People msg) {$/;"	f	class:PeopleTracker
+startup_time	include/people_tracker/people_tracker.h	/^    double startup_time;$/;"	m	class:PeopleTracker
+startup_time_str	include/people_tracker/people_tracker.h	/^    std::string startup_time_str;$/;"	m	class:PeopleTracker
+subscribers	include/people_tracker/people_tracker.h	/^    std::map<std::pair<std::string, std::string>, ros::Subscriber> subscribers;$/;"	m	class:PeopleTracker
+target_frame	include/people_tracker/people_tracker.h	/^    std::string target_frame;$/;"	m	class:PeopleTracker
+time	include/people_tracker/simple_tracking.h	/^    double dt, time;$/;"	m	class:SimpleTracking
+track	include/people_tracker/simple_tracking.h	/^    std::map<long, std::vector<geometry_msgs::Pose> > track(double* track_time = NULL) {$/;"	f	class:SimpleTracking
+trackingThread	src/people_tracker/people_tracker.cpp	/^void PeopleTracker::trackingThread() {$/;"	f	class:PeopleTracker
+ukf	include/people_tracker/people_tracker.h	/^    SimpleTracking<UKFilter> *ukf = NULL;$/;"	m	class:PeopleTracker
+what	include/people_tracker/asso_exception.h	/^  virtual const char* what() const throw()$/;"	f	class:asso_exception
+what	include/people_tracker/asso_exception.h	/^  virtual const char* what() const throw()$/;"	f	class:filter_exception
